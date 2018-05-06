@@ -3,6 +3,21 @@ package xin.val1ant.ch7.entity;
 public class Person {
     private String name;
     private Integer age;
+    private String address;
+
+    public Person(String name, Integer age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public Person() {
         super();

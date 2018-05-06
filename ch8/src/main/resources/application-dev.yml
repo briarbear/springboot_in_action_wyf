@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.24.128:1521:xe
+    username: system
+    password: oracle
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 80
+
+
+
+

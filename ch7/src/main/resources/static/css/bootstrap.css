@@ -1,0 +1,13 @@
+.col-md-1{
+    border:2px solid #1b6d85;
+    background: #2b669a;
+}
+.col-md-4{
+    border: 4px solid #66afe9;
+    background: #5bc0de;
+}
+.col-md-8{
+    border: 8px solid #ff0000;
+    background: #e7e7e7;
+}
+

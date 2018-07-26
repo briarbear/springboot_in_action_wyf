@@ -16,8 +16,8 @@ import org.springframework.context.annotation.Configuration;
  * @create 2018-07-24-16:05
  */
 @Configuration
-@EnableConfigurationProperties(HelloServiceProperties.class)  // 1. 开启属性注入
-@ConditionalOnClass(HelloService.class)   // 2. 当HelloService在类路径下
+@EnableConfigurationProperties(HelloServiceProperties.class)  // 1. 开启属性注入 该注解给出了该配置类所需要的配置信息类，这样spring容器会去读取配置信息到该类对象中
+@ConditionalOnClass(HelloService.class)   // 2. 当HelloService在类路径下,才会去解析对应的配置文件
 @ConditionalOnProperty(prefix = "hello",value = "enabled",matchIfMissing = true)  //3. 配置的前缀: hello 当设置hello=enabled的情况下，如果没有设置，则默认true，即条件符合
 public class HelloServiceAutoConfiguration {
 
